@@ -1,0 +1,14 @@
+{
+  "counts": {
+    "count_1": 23,
+    "count_2": 19
+  },
+  "items": [
+    {
+      "name": "item 1"
+    },
+    {
+      "name": "item 2"
+    }
+  ]
+}
