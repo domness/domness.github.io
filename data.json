@@ -54,7 +54,7 @@
         "cloth_number": 9,
         "horse": {
           "name": "Madam Secretary",
-          "last_ran_days": 21,
+          "days_since_last_run": 21,
           "foaled": "2013-08-08",
           "sex": "f"
         },
@@ -66,7 +66,7 @@
         "cloth_number": 10,
         "horse": {
           "name": "Music Maker",
-          "last_ran_days": 35,
+          "days_since_last_run": 35,
           "foaled": "2012-09-25",
           "sex": "m"
         },
@@ -78,7 +78,7 @@
         "cloth_number": 13,
         "horse": {
           "name": "Twinkle Town",
-          "last_ran_days": 35,
+          "days_since_last_run": 35,
           "foaled": "2013-09-30",
           "sex": "m"
         },
@@ -90,7 +90,7 @@
         "cloth_number": 3,
         "horse": {
           "name": "Brighton Belle",
-          "last_ran_days": 18,
+          "days_since_last_run": 18,
           "foaled": "2013-11-06",
           "sex": "f"
         },
@@ -103,7 +103,7 @@
         "cloth_number": 14,
         "horse": {
           "name": "Vivacious Vivian",
-          "last_ran_days": 14,
+          "days_since_last_run": 14,
           "foaled": "2013-10-24",
           "sex": "m"
         },
