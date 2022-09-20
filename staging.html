@@ -248,7 +248,7 @@
         if (event.data.gatherEvent === 'gather-app-ready') {
           console.log('Gather app is ready');
           console.log('Campaign ID is', event.data.campaignId);
-          campaignId = event.data.campaignId;
+          campaignId = parseInt(event.data.campaignId);
         }
       });
 
@@ -257,7 +257,7 @@
         if (!campaignId) {
           console.log('No campaign ID');
         } else {
-          console.log('...with campaignId', campaignId);
+          console.log(campaignId);
           window.parent.postMessage({ gatherEvent: 'gather-launch-sidebar', gatherCampaign: campaignId, dataAttributes: { lang: 'en-GB' } }, '*');
         }
       }
