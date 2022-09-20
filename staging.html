@@ -254,7 +254,7 @@
 
       function launchGather() {
         console.log('Launching');
-        if (campaignId) {
+        if (!campaignId) {
           console.log('No campaign ID');
         } else {
           window.parent.postMessage({ gatherEvent: 'gather-launch-sidebar', gatherCampaign: campaignId });
