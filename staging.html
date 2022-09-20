@@ -241,5 +241,25 @@
     <!-- <script type="text/javascript" src="https://gather-customers-staging.herokuapp.com/show_lead_signup_form/1febe0f15ed13bd0b530/bce54231a2e4084f94b0"></script> -->
     <!-- <script type="text/javascript" src="https://gather-customers-staging.herokuapp.com/show_lead_signup_form/e3ef9362b9054d85dd0c/95ac66216a897c3f7200"></script> -->
     <!-- <script type="text/javascript" src="https://gatherapp-interfaces-staging.s3.amazonaws.com/8c0c92f95cc3dfbdbd0b/7b80db89df8ff29f2f58.js"></script> -->
+    <script>
+      var campaignId;
+
+      window.addEventListener('message', function(event) {
+        if (event.data.gatherEvent === 'gather-app-ready') {
+          console.log('Gather app is ready');
+          console.log('Campaign ID is', event.data.campaignId);
+          campaignId = event.data.campaignId;
+        }
+      });
+
+      function launchGather() {
+        console.log('Launching');
+        if (campaignId) {
+          console.log('No campaign ID');
+        } else {
+          window.parent.postMessage({ gatherEvent: 'gather-launch-sidebar', gatherCampaign: campaignId });
+        }
+      }
+    </script>
   </body>
 </html>
