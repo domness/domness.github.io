@@ -257,7 +257,7 @@
         if (!campaignId) {
           console.log('No campaign ID');
         } else {
-          window.parent.postMessage({ gatherEvent: 'gather-launch-sidebar', gatherCampaign: campaignId });
+          window.parent.postMessage({ gatherEvent: 'gather-launch-sidebar', gatherCampaign: campaignId, dataAttributes: { lang: 'en-GB' } });
         }
       }
     </script>
