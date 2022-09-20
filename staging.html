@@ -73,6 +73,7 @@
           <p>
             <a href="#" onclick="launchGather()" class="btn btn-primary my-2">Main call to action</a>
             <a href="/staging_page_2.html" class="btn btn-secondary my-2">Go to page 2</a>
+            <a href="#" onclick="setDataAttributes()" class="btn btn-secondary my-2">Set dataAttributes</a>
           </p>
         </div>
       </section>
@@ -251,6 +252,11 @@
           campaignId = parseInt(event.data.campaignId);
         }
       });
+
+      function setDataAttributes() {
+        console.log(campaignId);
+        window.parent.postMessage({ gatherEvent: 'gather-set-data-attributes', gatherCampaign: campaignId, dataAttributes: { lang: 'en-GB', party: 'is-now' } }, '*');
+      }
 
       function launchGather() {
         console.log('Launching');
